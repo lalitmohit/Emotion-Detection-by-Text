@@ -4,6 +4,14 @@ import numpy as np
 import pickle
 import tensorflow as tf 
 from preprocess import *
+import nltk
+# import tensorflow as tf
+# from preprocess import preprocess
+# import streamlit as st
+
+# Download the stopwords data if not already downloaded
+nltk.download('stopwords', quiet=True)
+
 
 st.write("""
 # Emotion detection app
